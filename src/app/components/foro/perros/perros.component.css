@@ -1,0 +1,93 @@
+.cat{
+    display: grid;
+    grid-template-columns: 6% 5% 60% 20%;
+    align-items: center;
+    margin-left: 150px;
+    margin-block: 25px;
+  }
+  
+  .cat img{
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
+  }
+  
+  .cat h1{
+  margin-left: 15px;
+  }
+
+  .cat p{
+    cursor: pointer;
+    opacity: 50%;
+  }
+
+  .broadforo {
+    color: #d03733;
+  }
+  
+  .broad{
+    color: black;
+  }
+
+  .broad:hover,
+  .broad i:hover {
+    color: #d03733;
+    transition: color 0.3s ease;
+  }
+  
+  .broadcrumb {
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+  
+  .Titulo {
+    color: black;
+    font-weight: bold;
+    margin-left: 125px;
+    font-size: 35px;
+  }
+  
+  .busqueda {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .barra {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  
+  .barra i {
+    font-size: 20px;
+  }
+  
+  .barra input {
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 1000px;
+    border-bottom: 3px solid #d03733;
+  }
+  
+  .preguntar {
+    background-color: #d03733;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding-inline: 25px;
+    margin-right: 150px;
+  }
+  
+  .preguntar:hover {
+    transition: 0.08s linear;
+    background-color: #ff544e;
+  }
+  
+  .forocontent {
+    display: flex;
+    flex-direction: column;
+  }
