@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { DropdownMenuComponent } from '../dropdown-menu/dropdown-menu.component';
 
 @Component({
   selector: 'app-gatos',
   standalone: true,
-  imports: [],
+  imports: [ RouterLink, RouterOutlet, DropdownMenuComponent],
   templateUrl: './gatos.component.html',
-  styleUrl: './gatos.component.css'
+  styleUrl: '../categoriasm.component.css'
 })
 export class GatosComponent {
 

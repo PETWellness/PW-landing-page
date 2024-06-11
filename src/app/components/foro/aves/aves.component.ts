@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { DropdownMenuComponent } from '../dropdown-menu/dropdown-menu.component';
 
 @Component({
   selector: 'app-aves',
   standalone: true,
-  imports: [],
+  imports: [ RouterLink, RouterOutlet, DropdownMenuComponent],
   templateUrl: './aves.component.html',
-  styleUrl: './aves.component.css'
+  styleUrl: '../categoriasm.component.css'
 })
 export class AvesComponent {
 

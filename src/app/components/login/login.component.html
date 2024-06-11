@@ -1,5 +1,10 @@
 @if (isLoggedIn) {
-<p>Hola, {{username}}</p>
+    <div class="user">
+        <div class="imagen">
+            <img src="../../../assets/federico.jpg" alt=""></div>
+        <p [routerLink]="['/user']">{{username}}</p>
+    </div>
+    <h2>Grupos</h2>
 
 } @else {
 

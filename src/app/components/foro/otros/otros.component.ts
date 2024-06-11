@@ -1,11 +1,13 @@
+import { DropdownMenuComponent } from './../dropdown-menu/dropdown-menu.component';
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-otros',
   standalone: true,
-  imports: [],
+  imports: [ RouterLink, RouterOutlet, DropdownMenuComponent],
   templateUrl: './otros.component.html',
-  styleUrl: './otros.component.css'
+  styleUrl: '../categoriasm.component.css'
 })
 export class OtrosComponent {
 

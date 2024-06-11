@@ -7,7 +7,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [ DropdownMenuComponent, RouterLink, RouterOutlet],
   templateUrl: './perros.component.html',
-  styleUrl: './perros.component.css'
+  styleUrl: '../categoriasm.component.css'
 })
 export class PerrosComponent {
 

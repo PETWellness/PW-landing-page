@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { UserService } from '../../services/user.service';
+import { User } from '../../models/user';
 
 @Component({
   selector: 'app-login',
@@ -10,6 +12,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class LoginComponent {
   username = 'usuario';
-  isLoggedIn = false;
-}
+  petname = 'mascota';
+  isLoggedIn = true;
 
+}

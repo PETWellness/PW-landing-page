@@ -1,5 +1,4 @@
 footer{
-    position: absolute;
     background-color: black;
     color: white;
     display: grid;
@@ -44,7 +43,7 @@ div.contactanos h2{
 
 .contactanos p{
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 div.contacto-item{

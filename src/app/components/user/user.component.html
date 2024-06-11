@@ -1,0 +1,44 @@
+<section class="perfil-usuario">
+    <div class="contenedor-perfil">
+        <div class="portada-perfil" style="background-image: url('../../../assets/defaultbanner.jpg');">
+            <div class="sombra"></div>
+            <div class="avatar-perfil">
+                <img src="../../../assets/federico.jpg" alt="img">
+                <a href="#" class="cambiar-foto">
+                    <i class="fas fa-camera"></i> 
+                    <span>Cambiar foto</span>
+                </a>
+            </div>
+            <div class="datos-perfil">
+                <h4 class="titulo-usuario">{{username}}</h4>
+                <p class="bio-usuario">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+            <div class="opcciones-perfil">
+                <button type="">Cambiar portada</button>
+                <button type=""><i class="fas fa-wrench"></i></button>
+            </div>
+        </div>
+        <div class="menu-perfil">
+            <ul>
+                <li><a href="#" title=""><i class="icono-perfil fas fa-bullhorn"></i> Publicaciones</a></li>
+                <li><a href="#" title=""><i class="icono-perfil fas fa-info-circle"></i> Informacion</a></li>
+            </ul>
+        </div>
+        <div class="perfil-usuario-info">
+            <ul class="lista-datos">
+                <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
+                <li><i class="icono fas fa-briefcase"></i> Trabajo:</li>
+                <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento:</li>
+                <li><i class="icono fas fa-user-check"></i> Registro:</li>
+                <li><i class="fa-solid fa-flag" style="color: #000000;"></i> Pais:</li>
+            </ul>
+            <ul class="datos">
+                <li>{{phonenumber}}</li>
+                <li>{{work}}</li>
+                <li>{{birthday}}</li>
+                <li>{{registerdate}}</li>
+                <li>{{country}}</li>
+            </ul>
+        </div>
+    </div>
+</section>

@@ -19,6 +19,47 @@ html, body{
     min-height: 100vh;
 }
 
+.estrella1,
+.estrella2,
+.estrella3,
+.estrella4 {
+  width: 60px;
+  height: 60px;
+  background-color: #d03733;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.pelota1,
+.pelota2,
+.pelota3,
+.pelota4,
+.pelota5 {
+  width: 15px;
+  height: 15px;
+  background-color: #00c4cc;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .contenido{
     flex: 1;
+}
+
+.color-rojo{
+    color: #d03733;
+}
+
+.color-azul{
+    color: #00c4cc;
 }
