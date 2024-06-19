@@ -1,6 +1,5 @@
 .cat{
-    display: grid;
-    grid-template-columns: 6% 5% 60% 20%;
+    display: flex;
     align-items: center;
     margin-left: 150px;
     margin-block: 25px;
@@ -53,7 +52,7 @@
   }
   
   .barra {
-    margin-left: 150px;
+    margin-left: 200px;
     margin-top: 20px;
   }
   
@@ -79,7 +78,7 @@
     cursor: pointer;
     font-size: 20px;
     padding-inline: 25px;
-    margin-right: 150px;
+    margin-right: 200px;
   }
   
   .preguntar:hover {
@@ -90,4 +89,23 @@
   .forocontent {
     display: flex;
     flex-direction: column;
+  }
+
+  .categorias{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .categorias li{
+    padding-inline: 50px;
+  }
+
+  .categorias li:hover{
+    background-color: #D03733;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-block: 5px;
   }

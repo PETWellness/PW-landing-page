@@ -1,22 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-*{
-    font-family: "Nunito", sans-serif;
-    margin: 0;
-    text-decoration: none !important;
-    list-style: none !important;
-    box-sizing: border-box;
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .estrella1,
@@ -52,14 +53,24 @@ html, body{
   z-index: 1;
 }
 
-.contenido{
-    flex: 1;
+.contenido {
+  flex: 1;
 }
 
-.color-rojo{
-    color: #d03733;
+.color-rojo {
+  color: #d03733;
 }
 
-.color-azul{
-    color: #00c4cc;
+.color-azul {
+  color: #00c4cc;
+}
+
+#red,
+#rojo {
+  color: #d03733;
+}
+
+#azul,
+#blue {
+  color: #00c4cc;
 }

@@ -13,12 +13,20 @@ import { AvesComponent } from './components/foro/aves/aves.component';
 import { OtrosComponent } from './components/foro/otros/otros.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { UserComponent } from './components/user/user.component';
+import { InfoComponent } from './components/user/info/info.component';
+import { PostsComponent } from './components/user/posts/posts.component';
+import { PostComponent } from './components/foro/post/post.component';
+import { GruposComponent } from './components/user/grupos/grupos.component';
+import { CreargrupoComponent } from './components/user/grupos/creargrupo/creargrupo.component';
 
 export const routes: Routes = [
     { path: 'component', component: AppComponent},
     { path: 'login', component: LoginComponent},
     { path: 'register', component: RegisterComponent},
     { path: 'foro', component: ForoComponent},
+    { path: 'post', component: PostComponent},
+    { path: 'grupos', component: GruposComponent},
+    { path: 'nuevo-grupo', component: CreargrupoComponent},
     { path: 'forgot', component: ForgotComponent},
     { path: 'perros', component: PerrosComponent},
     { path: 'gatos', component: GatosComponent},
@@ -28,5 +36,8 @@ export const routes: Routes = [
     { path: 'aves', component: AvesComponent},
     { path: 'otros', component: OtrosComponent},
     { path: 'nosotros', component: NosotrosComponent},
-    { path: 'user', component: UserComponent},
+    { path: 'user', component: UserComponent, children: [
+        { path: 'info', component: InfoComponent },
+        { path: 'posts', component: PostsComponent }
+      ]},
 ];

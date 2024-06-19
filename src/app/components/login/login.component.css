@@ -20,16 +20,14 @@
 }
 
 .buttonmenulogin{
-    margin-top: 20px; 
+    margin-top: 10px; 
     text-align: center;
 }
 
-div.login{
-    margin: 10px;
-}
-
-div.register{
-    margin: 10px;
+.login, .register{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .login a{
