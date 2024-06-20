@@ -9,5 +9,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent {
-  username ='username';
+  username ='BMarin2003';
 }

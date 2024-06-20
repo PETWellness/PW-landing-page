@@ -5,6 +5,7 @@
         <p [routerLink]="['/user']">{{username}}</p>
     </div>
     <h2 [routerLink]="['/grupos']">Grupos</h2>
+    <h3 (click)="logout()">Cerrar Sesión</h3>
 
 } @else {
 
@@ -12,7 +13,7 @@
     <form>
         <div class="llenar">
             <div class="formemail">
-                <h1>Correo</h1>
+                <h1>Usuario</h1>
                 <input type="email" placeholder="">
             </div>
             <div class="formpassw">
@@ -22,7 +23,7 @@
         </div>
         <div class="buttonmenulogin">
             <div class="login">
-                <a routerlink="" class="login"><span class="unetenostexto">Iniciar Sesión</span></a>
+                <a (click)="login()" class="login"><span class="unetenostexto">Iniciar Sesión</span></a>
             </div>
             <div class="register">
                 <a [routerLink]="['/register']" class="register"><span class="unetenostexto">Regístrate</span></a>

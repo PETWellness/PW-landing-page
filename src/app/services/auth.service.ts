@@ -1,34 +1,36 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { map, catchError } from 'rxjs/operators';
+import { tap, catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:4200/'; // Reemplaza con tu URL de autenticación
+  private isLoggedIn = false;
+  private apiUrl = 'https://example.com/api/login';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   login(username: string, password: string): Observable<boolean> {
-    return this.http.post<{ token: string }>(this.apiUrl, { username, password }).pipe(
-      map(response => {
-        localStorage.setItem('token', response.token);
-        return true;
+    return this.http.post<{token: string}>(this.apiUrl, { username, password }).pipe(
+      tap(response => {
+        if (response.token) {
+          this.isLoggedIn = true;
+          localStorage.setItem('token', response.token);
+        }
       }),
-      catchError(error => {
-        console.error(error);
-        return of(false);
-      })
+      map(response => !!response.token),
+      catchError(() => of(false))
     );
   }
 
   logout(): void {
+    this.isLoggedIn = false;
     localStorage.removeItem('token');
   }
 
   isAuthenticated(): boolean {
-    return !!localStorage.getItem('token');
+    return this.isLoggedIn;
   }
 }
